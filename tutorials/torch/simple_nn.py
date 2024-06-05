@@ -1,9 +1,5 @@
-import torch
 import torch.nn.functional as F
-from torch import nn, optim
-from torch.utils.data import DataLoader
-from torch.utils.data import random_split
-from tqdm import tqdm 
+from torch import nn
 
 
 class NN(nn.Module):
