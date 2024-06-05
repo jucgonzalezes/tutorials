@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "tutorials"
 version = "0.1.0"
-description = ""
+description = "ML/AI tutorials."
 authors = ["Juan C Gonzalez Espitia <jues.carlos@gmail.com>"]
 license = "MIT"
 readme = "README.md"
@@ -16,6 +16,7 @@ scipy = "^1.13"
 torch = "2.0"
 pytorch_lightning = "^2.0"
 loguru = "^0.7"
+tqdm = "^4.6"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1"
