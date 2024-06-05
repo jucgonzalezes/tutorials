@@ -1,5 +1,6 @@
 # Tutorials 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![CI](https://github.com/jucgonzalezes/tutorials/actions/workflows/ci.yml/badge.svg)](https://github.com/jucgonzalezes/tutorials/actions/workflows/ci.yml)
 
 
 This repository contains a set of tutorials on topics related with ML, AI and Quantum.
