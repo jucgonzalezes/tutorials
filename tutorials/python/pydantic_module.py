@@ -1,4 +1,5 @@
 from pydantic import BaseModel, field_validator
+from tutorials.utils.utils import new_section
 
 
 class MyClass(BaseModel):
@@ -22,10 +23,6 @@ class Item(BaseModel):
     id: int
     name: str
     price: float
-
-
-def new_section(sect_name=""):
-    print("\n" + 80 * "-" + "\n" + f"{sect_name}")
 
 
 if __name__ == "__main__":
