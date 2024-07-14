@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+
 @dataclass
 class MyClass:
     field1: int
@@ -7,7 +8,7 @@ class MyClass:
     field3: float
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     my_instance = MyClass(1, "Hi!", 3.1416)
     print(my_instance)
     print(type(my_instance.field2))

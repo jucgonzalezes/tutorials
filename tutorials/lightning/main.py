@@ -1,8 +1,7 @@
 # import torch
 import pytorch_lightning as pl
-
-from torch import nn, optim
 import torch.nn.functional as F
+from torch import nn, optim
 
 
 class NN(pl.LightningModule):

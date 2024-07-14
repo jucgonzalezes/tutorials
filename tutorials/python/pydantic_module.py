@@ -1,5 +1,5 @@
-import json
 from pydantic import BaseModel, field_validator
+
 
 class MyClass(BaseModel):
     field1: int
@@ -25,7 +25,8 @@ class Item(BaseModel):
 
 
 def new_section(sect_name=""):
-    print("\n" + 80 * "-" + "\n" +f"{sect_name}")
+    print("\n" + 80 * "-" + "\n" + f"{sect_name}")
+
 
 if __name__ == "__main__":
     # Instance with matching fields
@@ -38,7 +39,7 @@ if __name__ == "__main__":
 
     # Datatype coercion
     new_section("Data coercion")
-    my_new_instance = MyClass(field1=1, field2="Hi!",field3="3")
+    my_new_instance = MyClass(field1=1, field2="Hi!", field3="3")
     print(my_new_instance)
     print(type(my_new_instance.field1))
     print(type(my_new_instance.field2))
@@ -47,7 +48,7 @@ if __name__ == "__main__":
     # Custom Data validation
     new_section("Custom Data validator")
     try:
-        my_validated_instance = MyClass(field1=10, field2="Hi!",field3="3")
+        my_validated_instance = MyClass(field1=10, field2="Hi!", field3="3")
         print(my_validated_instance)
         print(type(my_validated_instance.field1))
         print(type(my_validated_instance.field2))
@@ -58,7 +59,7 @@ if __name__ == "__main__":
     # Settings Managements
     new_section("Settings manager")
     settings = Settings(apli_key="MYAPIKEY")
-    print(settings.apli_key)    
+    print(settings.apli_key)
 
     # Serialization
     new_section("Serialization")
@@ -73,5 +74,3 @@ if __name__ == "__main__":
     item2 = Item.model_validate_json(new_json_data)
     print(item2)
     print(item2.model_dump())
-
-

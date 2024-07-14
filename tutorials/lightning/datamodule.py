@@ -1,8 +1,7 @@
 import pytorch_lightning as pl
 import torchvision.datasets as datasets
 import torchvision.transforms as transforms
-from torch.utils.data import DataLoader
-from torch.utils.data import random_split
+from torch.utils.data import DataLoader, random_split
 
 
 class CustomDataModule(pl.LightningDataModule):
