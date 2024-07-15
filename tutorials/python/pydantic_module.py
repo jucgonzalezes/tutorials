@@ -1,4 +1,5 @@
 from pydantic import BaseModel, field_validator
+
 from tutorials.utils.utils import new_section
 
 
