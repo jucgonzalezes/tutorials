@@ -19,6 +19,10 @@ loguru = "^0.7"
 tqdm = "^4.6"
 pydantic = "2.8.2"
 polars = "^1.0"
+pyarrow = "^17.0"
+catboost = "^1.2"
+category-encoders = "^2.6"
+shap = "^0.46"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1"
@@ -27,6 +31,8 @@ pytest-cov = "^3.0"
 black = "^22.3"
 mypy = "^0.950"
 ruff = "^0.4"
+ipykernel = "^6.29"
+
 
 [build-system]
 requires = ["poetry-core"]
